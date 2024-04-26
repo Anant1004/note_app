@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Fresca&family=Jersey+15&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=NTR&family=Ojuju:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap');
+*{
+    font-family: "Jersey 15";
+}
+.open{
+    visibility: visible;
+}
+.close{
+    visibility: hidden;
+}
