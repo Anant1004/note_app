@@ -23,6 +23,14 @@ app.get("/file/:filename", function (req, res) {
         res.render("note", { filename: req.params.filename, filedata: filedata })
     })
 })
+app.get("/edit/:filename", function (req, res) {
+    res.render("edit",{filename: req.params.filename} )
+})
+app.post("/edit", function (req, res) {
+    fs.rename(`./Files/${req.body.prevname}`,`./Files/${req.body.newname}.txt`, function(err){
+        res.redirect("/")
+    })
+})
 
 app.listen(4000, function () {
     console.log("started serer");

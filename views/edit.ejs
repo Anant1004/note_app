@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=  %></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+<body class="main w-full min-h-screen bg-zinc-900 p-10 text-white">
+    <i class="ri-arrow-left-line"></i>
+    <a href="/" class="text-blue-600">Go to Home</a>
+    <form action="/edit" method="POST">
+        <div class="mt-2 w-1/4">
+            <input type="text" id="title" name="prevname" class=" bg-zinc-800 text-white w-full border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500" placeholder="Previous name" value="<%=filename  %>">
+        </div>
+        <div class="mt-2 w-1/4">
+            <input type="text" id="title" name="newname" class=" bg-zinc-800 text-white w-full border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500" placeholder="Enter New Name">
+        </div>
+        <div class="mt-2">
+            <button type="submit" class="bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Submit</button>
+        </div>
+    </form>
+    <script src="/javascripts/navbar_toogle.js"></script>
+</body>
+</html>

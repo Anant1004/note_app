@@ -51,7 +51,10 @@
             <% files.forEach(function(val) { %>
                 <div class="task w-72 px-3 py-4 bg-zinc-700 rounded-md">
                     <h1 class="text-white cursor-default"><%= val %></h1>
-                    <a href="/file/<%=val %>" class="text-blue-600">Read more....</a>
+                    <div class="flex justify-between">
+                        <a href="/file/<%=val %>" class="text-blue-600">Read more....</a>
+                        <a href="/edit/<%=val %>" class="text-yellow-100">Edit</a>
+                    </div>
                 </div>
             <% }) %>
         <% } else { %>
