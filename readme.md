@@ -77,7 +77,3 @@ Contributions are welcome! Please feel free to submit a pull request.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-You can customize this README with additional information, such as detailed usage instructions, deployment instructions, or any other relevant details about your notes app. Feel free to tailor it to best fit the structure and functionality of your project. Good luck! 🚀
