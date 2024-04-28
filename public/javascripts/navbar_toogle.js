@@ -1,5 +1,5 @@
 const btn = document.querySelector(".btn")
-const navlinks = document.querySelector(".mobile")
+const navlinks = document.querySelector(".navbar")
 let isopen = false;
 
 
