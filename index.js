@@ -27,10 +27,16 @@ app.get("/edit/:filename", function (req, res) {
     res.render("edit",{filename: req.params.filename} )
 })
 app.post("/edit", function (req, res) {
-    fs.rename(`./Files/${req.body.prevname}`,`./Files/${req.body.newname}.txt`, function(err){
+    fs.rename(`./Files/${req.body.prevname}`,`./Files/${req.body.newname}.t`, function(err){
         res.redirect("/")
     })
 })
+app.get("/about",function(req, res){
+    res.render("about")
+})
+
+
+
 
 app.listen(4000, function () {
     console.log("started serer");
