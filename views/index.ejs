@@ -46,10 +46,10 @@
             </form>
         </div>
     </div>
-    <div class="tasks px-10 mt-5 flex gap-4 flex-wrap">
+    <div class="tasks px-10 mt-5 flex gap-4 flex-wrap justify-center">
         <% if (files.length > 0) { %>
             <% files.forEach(function(val) { %>
-                <div class="task w-72 px-3 py-4 bg-zinc-700 rounded-md">
+                <div class="task w-64 px-3 py-4 bg-zinc-700 rounded-md">
                     <h1 class="text-white cursor-default"><%= val %></h1>
                     <div class="flex justify-between">
                         <a href="/file/<%=val %>" class="text-blue-600">Read more....</a>
